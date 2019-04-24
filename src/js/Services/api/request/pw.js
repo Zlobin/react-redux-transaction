@@ -136,4 +136,4 @@ class PW extends Api {
   }
 }
 
-export default new PW('http://193.124.114.46:3001/');
+export default new PW(process.env.REACT_APP_PW_API_URL);

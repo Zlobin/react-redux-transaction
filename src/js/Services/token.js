@@ -1,7 +1,7 @@
 import decode from 'jwt-decode';
 
 function tokenService() {
-  const cachePrefix = 'id_token';
+  const cachePrefix = process.env.REACT_APP_STORAGE_PREFIX;
 
   return {
     isLoggedIn() {
