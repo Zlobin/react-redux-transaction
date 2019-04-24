@@ -1,0 +1,48 @@
+{
+  "name": "react-redux-test",
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "autosuggest-highlight": "^3.1.1",
+    "axios": "^0.18.0",
+    "history": "^4.9.0",
+    "jwt-decode": "^2.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-autosuggest": "^9.4.3",
+    "react-dom": "^16.8.6",
+    "react-loadable": "^5.5.0",
+    "react-redux": "^7.0.2",
+    "react-router-dom": "^5.0.0",
+    "react-router-prop-types": "^1.0.4",
+    "react-router-redux": "^4.0.8",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "node-sass-chokidar": "^1.3.4",
+    "npm-run-all": "^4.1.5",
+    "react-scripts": "^2.1.8",
+    "redux-devtools": "^3.5.0",
+    "sass-lint": "^1.12.1"
+  },
+  "scripts": {
+    "lint-css": "sass-lint src/scss/**/*.scss -v -q",
+    "fix-css": "sass-lint-auto-fix",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "yarn run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "lint-js": "eslint ./src/js/",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p lint-js lint-css watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

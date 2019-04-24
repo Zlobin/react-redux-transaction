@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "airbnb/base",
+    "plugin:react/recommended",
+    "react-app",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": [
+    "react",
+    "jsx-a11y"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "comma-dangle": [2, "never"],
+    "no-param-reassign": 0,
+    "prefer-rest-params": 0,
+    "no-underscore-dangle": 0,
+    "template-curly-spacing": 0,
+    "arrow-parens": 0,
+    "no-case-declarations": 0,
+    "class-methods-use-this": 0,
+    "no-plusplus": 0
+  }
+}

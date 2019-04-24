@@ -1,0 +1,6 @@
+files:
+  include: "src/scss/**/*.s+(a|c)ss"
+  ignore: []
+rules:
+  class-name-format:
+    - 0
